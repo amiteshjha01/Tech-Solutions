@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | TechSolutions</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="5;url=index.html">
+</head>
+
+<body style="height: 100vh; display: flex; align-items: center; justify-content: center; background: #0f172a; color: white; text-align: center;">
+    <div class="container">
+        <div style="background: rgba(255,255,255,0.05); padding: 4rem; border-radius: 2rem; border: 1px solid rgba(255,255,255,0.1); max-width: 600px; margin: 0 auto;">
+            <div class="logo-icon" style="width: 80px; height: 80px; margin: 0 auto 2rem; background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; border-radius: 1.5rem;">
+                <i data-lucide="check-circle" size="40" style="color: white;"></i>
+            </div>
+            <h1 style="font-size: 2.5rem; margin-bottom: 1.5rem; color: #ffffff;">Thank You!</h1>
+            <p style="font-size: 1.25rem; color: var(--gray-400); margin-bottom: 2rem;">We have received your information and we'll get back to you ASAP. We appreciate your interest in TechSolutions.</p>
+            <div style="width: 40px; height: 4px; background: rgba(255,255,255,0.1); border-radius: 2px; margin: 0 auto 2rem; overflow: hidden;">
+                <div style="height: 100%; width: 100%; background: var(--primary); animation: loading 5s linear forwards;"></div>
+            </div>
+            <p style="font-size: 0.875rem; color: var(--gray-600);">Redirecting to home page in 5 seconds...</p>
+            <a href="index.html" class="btn btn-primary" style="margin-top: 2rem;">Return Home Now</a>
+        </div>
+    </div>
+
+    <style>
+        @keyframes loading {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+    </style>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

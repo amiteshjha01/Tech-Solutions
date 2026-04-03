@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Apply for open positions at TechSolutions. Join a fast-growing team of digital infrastructure builders.">
+    <title>Apply for a Position | TechSolutions Careers</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--gray-200);
+            border-radius: 0.75rem;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.1);
+        }
+
+        .form-control::placeholder {
+            color: var(--gray-400);
+        }
+
+        select.form-control {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23475569' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.25rem;
+            padding-right: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar" class="scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><i data-lucide="zap" size="20"></i></div>
+                TechSolutions
+            </a>
+            <ul id="navLinks" class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div id="navToggle" class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section-padding" style="padding-top: 10rem;">
+            <div class="container">
+                <div style="max-width: 700px; margin: 0 auto;">
+                    <div style="text-align: center; margin-bottom: 3rem;">
+                        <span class="badge">Application Portal</span>
+                        <h1 id="roleTitle">Join Our <span class="text-gradient">Core Team</span></h1>
+                        <p style="color: var(--gray-600); margin-top: 1rem;">Complete the form below to begin your journey with TechSolutions.</p>
+                    </div>
+
+                    <!-- Job Description Section -->
+                    <div id="jdSection" style="background: var(--gray-100); padding: 2.5rem; border-radius: 2rem; margin-bottom: 3rem; display: none;">
+                        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Job Description</h2>
+                        <div id="jdContent" style="color: var(--gray-600); line-height: 1.7;">
+                            <!-- Dynamic Content -->
+                        </div>
+                    </div>
+
+                    <div style="background: white; padding: 3rem; border-radius: 2rem; border: 1px solid var(--gray-200); box-shadow: var(--shadow-lg);">
+                        <!-- FormSubmit Connection -->
+                        <form action="https://formsubmit.co/hr@techsolutions.com" method="POST" enctype="multipart/form-data">
+                            <!-- Anti-spam -->
+                            <input type="text" name="_honey" style="display:none">
+                            <input type="hidden" name="_subject" value="New Career Application">
+                            <input type="hidden" name="_next" value="thanks.html">
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                                <div class="form-group">
+                                    <label class="form-label">Full Name</label>
+                                    <input type="text" name="name" class="form-control" placeholder="Amitesh Kumar" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Email Address</label>
+                                    <input type="email" name="email" class="form-control" placeholder="amitesh@example.com" required>
+                                </div>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                                <div class="form-group">
+                                    <label class="form-label">Mobile Number</label>
+                                    <input type="tel" name="mobile" class="form-control" placeholder="+91 99119 16497" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">College / University</label>
+                                    <input type="text" name="college" class="form-control" placeholder="IIT Delhi" required>
+                                </div>
+                            </div>
+
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                                <div class="form-group">
+                                    <label class="form-label">Year of Passing</label>
+                                    <input type="number" name="passing_year" class="form-control" placeholder="2024" required>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Post Applying For</label>
+                                    <select name="position" class="form-control" required>
+                                        <option value="" disabled selected>Select Position</option>
+                                        <option value="Senior Web Developer">Senior Web Developer</option>
+                                        <option value="Performance Marketing Specialist">Performance Marketing Specialist</option>
+                                        <option value="GMB & Local SEO Expert">GMB & Local SEO Expert</option>
+                                        <option value="Internship/Other">Internship / Other</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">Upload Resume (PDF only)</label>
+                                <input type="file" name="resume" class="form-control" accept=".pdf" required style="padding-top: 0.75rem;">
+                                <p style="font-size: 0.825rem; color: var(--gray-400); margin-top: 0.5rem;">Max file size: 5MB</p>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem; padding: 1.25rem;">
+                                Submit Application <i data-lucide="send"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <a href="https://wa.me/919911916497?text=Hi%20TechSolutions%2C%20I%20have%20a%20query%20regarding%20my%20career%20application."
+        class="whatsapp-float" target="_blank" title="Chat with Recruitment on WhatsApp">
+        <i data-lucide="message-circle"></i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <a href="index.html" class="logo" style="color: white;">
+                        <div class="logo-icon"><i data-lucide="zap" size="20"></i></div>
+                        TechSolutions
+                    </a>
+                    <p>Building high-performance digital infrastructure for businesses in India. Results lead, technology follows.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Core Services</h4>
+                    <ul>
+                        <li><a href="service-crm.html">CRM Development</a></li>
+                        <li><a href="service-web.html">Website Design</a></li>
+                        <li><a href="service-marketing.html">Performance Marketing</a></li>
+                        <li><a href="service-gmb.html">GMB Optimization</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="projects.html">Portfolio</a></li>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="tel:+919911916497">+91 99119 16497</a></li>
+                        <li>Delhi NCR</li>
+                        <li>Patna</li>
+                        <li>Hyderabad</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TechSolutions. Specialized Digital Solutions Agency.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const navToggle = document.getElementById('navToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        if(navToggle) {
+            navToggle.addEventListener('click', () => {
+                navToggle.classList.toggle('active');
+                navLinks.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+        }
+
+        // JD Data
+        const jds = {
+            'web': {
+                title: 'Senior <span class="text-gradient">Web Developer</span>',
+                content: `
+                    <p style="margin-bottom: 1rem;"><strong>Role Overview:</strong> Join us in building high-performance websites and management systems for diverse industries.</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Key Responsibilities:</strong></p>
+                    <ul style="margin-bottom: 1rem; padding-left: 1.5rem;">
+                        <li>Architect and develop responsive HTML/CSS/JS frontend solutions.</li>
+                        <li>Implement backend logic and API integrations.</li>
+                        <li>Optimize site performance and core web vitals.</li>
+                    </ul>
+                    <p><strong>Requirements:</strong> 3+ years experience, expert in modern JS frameworks, and a solid portfolio.</p>
+                `
+            },
+            'marketing': {
+                title: 'Performance <span class="text-gradient">Marketing Specialist</span>',
+                content: `
+                    <p style="margin-bottom: 1rem;"><strong>Role Overview:</strong> Drive growth for our clients through data-driven performance marketing strategies.</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Key Responsibilities:</strong></p>
+                    <ul style="margin-bottom: 1rem; padding-left: 1.5rem;">
+                        <li>Manage high-budget Meta and Google Ad campaigns.</li>
+                        <li>A/B testing and landing page optimization.</li>
+                        <li>Analytical reporting and ROI calculation.</li>
+                    </ul>
+                    <p><strong>Requirements:</strong> Proven track record of scaling ad spend and deep analytical skills.</p>
+                `
+            },
+            'gmb': {
+                title: 'GMB & <span class="text-gradient">Local SEO Expert</span>',
+                content: `
+                    <p style="margin-bottom: 1rem;"><strong>Role Overview:</strong> Help local businesses dominate their search neighborhood across India.</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Key Responsibilities:</strong></p>
+                    <ul style="margin-bottom: 1rem; padding-left: 1.5rem;">
+                        <li>Optimize Google Business Profiles for maximum visibility.</li>
+                        <li>Manage local citations and review acquisition.</li>
+                        <li>Track local search ranking and traffic growth.</li>
+                    </ul>
+                    <p><strong>Requirements:</strong> In-depth knowledge of local search algorithms and GMB guidelines.</p>
+                `
+            }
+        };
+
+        // Handle Dynamic Content
+        const urlParams = new URLSearchParams(window.location.search);
+        const roleKey = urlParams.get('role');
+
+        if (roleKey && jds[roleKey]) {
+            document.getElementById('jdSection').style.display = 'block';
+            document.getElementById('roleTitle').innerHTML = `Apply: ${jds[roleKey].title}`;
+            document.getElementById('jdContent').innerHTML = jds[roleKey].content;
+            
+            // Auto-select dropdown
+            const select = document.querySelector('select[name="position"]');
+            if (roleKey === 'web') select.value = 'Senior Web Developer';
+            if (roleKey === 'marketing') select.value = 'Performance Marketing Specialist';
+            if (roleKey === 'gmb') select.value = 'GMB & Local SEO Expert';
+        }
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if(navToggle) navToggle.classList.remove('active');
+                if(navLinks) navLinks.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+    </script>
+</body>
+
+</html>
