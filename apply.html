@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Apply for open positions at TechSolutions. Join a fast-growing team of digital infrastructure builders.">
+        content="Apply for open positions at TechSolutions — a custom software and technology company in India. Join our team of developers, testers, and digital specialists.">
     <title>Apply for a Position | TechSolutions Careers</title>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link rel="stylesheet" href="style.css">
@@ -79,24 +79,23 @@
                 <div style="max-width: 700px; margin: 0 auto;">
                     <div style="text-align: center; margin-bottom: 3rem;">
                         <span class="badge">Application Portal</span>
-                        <h1 id="roleTitle">Join Our <span class="text-gradient">Core Team</span></h1>
-                        <p style="color: var(--gray-600); margin-top: 1rem;">Complete the form below to begin your journey with TechSolutions.</p>
+                        <h1 id="roleTitle">Join the <span class="text-gradient">TechSolutions Team</span></h1>
+                        <p style="color: var(--gray-600); margin-top: 1rem;">Fill in the details below and we'll review your application and get back to you promptly.</p>
                     </div>
 
                     <!-- Job Description Section -->
                     <div id="jdSection" style="background: var(--gray-100); padding: 2.5rem; border-radius: 2rem; margin-bottom: 3rem; display: none;">
-                        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Job Description</h2>
+                        <h2 style="font-size: 1.5rem; margin-bottom: 1.5rem;">Role Overview</h2>
                         <div id="jdContent" style="color: var(--gray-600); line-height: 1.7;">
                             <!-- Dynamic Content -->
                         </div>
                     </div>
 
                     <div style="background: white; padding: 3rem; border-radius: 2rem; border: 1px solid var(--gray-200); box-shadow: var(--shadow-lg);">
-                        <!-- FormSubmit Connection -->
                         <form action="https://formsubmit.co/hr@techsolutions.com" method="POST" enctype="multipart/form-data">
                             <!-- Anti-spam -->
                             <input type="text" name="_honey" style="display:none">
-                            <input type="hidden" name="_subject" value="New Career Application">
+                            <input type="hidden" name="_subject" value="New Career Application – TechSolutions">
                             <input type="hidden" name="_next" value="thanks.html">
 
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
@@ -127,12 +126,13 @@
                                     <input type="number" name="passing_year" class="form-control" placeholder="2024" required>
                                 </div>
                                 <div class="form-group">
-                                    <label class="form-label">Post Applying For</label>
+                                    <label class="form-label">Position Applying For</label>
                                     <select name="position" class="form-control" required>
                                         <option value="" disabled selected>Select Position</option>
-                                        <option value="Senior Web Developer">Senior Web Developer</option>
-                                        <option value="Performance Marketing Specialist">Performance Marketing Specialist</option>
-                                        <option value="GMB & Local SEO Expert">GMB & Local SEO Expert</option>
+                                        <option value="Full Stack Web Developer">Full Stack Web Developer</option>
+                                        <option value="CRM Implementation Specialist">CRM Implementation Specialist</option>
+                                        <option value="Software Test Engineer">Software Test Engineer</option>
+                                        <option value="Digital Marketing & SEO Specialist">Digital Marketing & SEO Specialist</option>
                                         <option value="Internship/Other">Internship / Other</option>
                                     </select>
                                 </div>
@@ -167,15 +167,17 @@
                         <div class="logo-icon"><i data-lucide="zap" size="20"></i></div>
                         TechSolutions
                     </a>
-                    <p>Building high-performance digital infrastructure for businesses in India. Results lead, technology follows.</p>
+                    <p>Custom software and technology solutions for businesses across India. We build CRMs, web apps, websites, LMS platforms, and more.</p>
                 </div>
                 <div class="footer-links">
                     <h4>Core Services</h4>
                     <ul>
-                        <li><a href="service-crm.html">CRM Development</a></li>
-                        <li><a href="service-web.html">Website Design</a></li>
-                        <li><a href="service-marketing.html">Performance Marketing</a></li>
+                        <li><a href="service-crm.html">Custom CRM Development</a></li>
+                        <li><a href="service-web.html">Website & Web App Development</a></li>
+                        <li><a href="service-lms.html">LMS Development</a></li>
+                        <li><a href="service-marketing.html">Digital Marketing & SEO</a></li>
                         <li><a href="service-gmb.html">GMB Optimization</a></li>
+                        <li><a href="service-testing.html">Software Testing</a></li>
                     </ul>
                 </div>
                 <div class="footer-links">
@@ -200,7 +202,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 TechSolutions. Specialized Digital Solutions Agency.</p>
+                <p>&copy; 2026 TechSolutions. Custom Software & Technology Solutions Company.</p>
             </div>
         </div>
     </footer>
@@ -221,42 +223,55 @@
         // JD Data
         const jds = {
             'web': {
-                title: 'Senior <span class="text-gradient">Web Developer</span>',
+                title: 'Full Stack <span class="text-gradient">Web Developer</span>',
                 content: `
-                    <p style="margin-bottom: 1rem;"><strong>Role Overview:</strong> Join us in building high-performance websites and management systems for diverse industries.</p>
+                    <p style="margin-bottom: 1rem;"><strong>Role Overview:</strong> Join our development team to build custom websites, web applications, and client-facing portals for businesses across India.</p>
                     <p style="margin-bottom: 0.5rem;"><strong>Key Responsibilities:</strong></p>
                     <ul style="margin-bottom: 1rem; padding-left: 1.5rem;">
-                        <li>Architect and develop responsive HTML/CSS/JS frontend solutions.</li>
-                        <li>Implement backend logic and API integrations.</li>
-                        <li>Optimize site performance and core web vitals.</li>
+                        <li>Design and develop responsive frontend interfaces using HTML, CSS, and JavaScript frameworks.</li>
+                        <li>Build and integrate backend APIs and database logic.</li>
+                        <li>Optimise performance, load speed, and core web vitals across projects.</li>
                     </ul>
-                    <p><strong>Requirements:</strong> 3+ years experience, expert in modern JS frameworks, and a solid portfolio.</p>
+                    <p><strong>Requirements:</strong> 2+ years of hands-on development experience, proficiency in modern JS frameworks (React/Next.js), and a strong portfolio of delivered projects.</p>
+                `
+            },
+            'crm': {
+                title: 'CRM <span class="text-gradient">Implementation Specialist</span>',
+                content: `
+                    <p style="margin-bottom: 1rem;"><strong>Role Overview:</strong> Work directly with clients to configure, customise, and deploy TechSolutions' proprietary CRM platform to fit their sales and operations workflows.</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Key Responsibilities:</strong></p>
+                    <ul style="margin-bottom: 1rem; padding-left: 1.5rem;">
+                        <li>Understand client business processes and map them to CRM features.</li>
+                        <li>Configure pipelines, automations, and reporting dashboards.</li>
+                        <li>Provide onboarding support and training to client teams.</li>
+                    </ul>
+                    <p><strong>Requirements:</strong> Experience with CRM platforms (any), strong communication skills, and an ability to translate business needs into technical configurations.</p>
+                `
+            },
+            'testing': {
+                title: 'Software <span class="text-gradient">Test Engineer</span>',
+                content: `
+                    <p style="margin-bottom: 1rem;"><strong>Role Overview:</strong> Ensure the quality and reliability of software products built by TechSolutions through structured testing processes.</p>
+                    <p style="margin-bottom: 0.5rem;"><strong>Key Responsibilities:</strong></p>
+                    <ul style="margin-bottom: 1rem; padding-left: 1.5rem;">
+                        <li>Write and execute test cases for web applications, CRMs, and LMS platforms.</li>
+                        <li>Perform functional, regression, and performance testing.</li>
+                        <li>Document bugs clearly and work closely with the development team on resolution.</li>
+                    </ul>
+                    <p><strong>Requirements:</strong> Solid understanding of software testing methodologies, experience with manual and/or automated testing, and strong attention to detail.</p>
                 `
             },
             'marketing': {
-                title: 'Performance <span class="text-gradient">Marketing Specialist</span>',
+                title: 'Digital Marketing <span class="text-gradient">& SEO Specialist</span>',
                 content: `
-                    <p style="margin-bottom: 1rem;"><strong>Role Overview:</strong> Drive growth for our clients through data-driven performance marketing strategies.</p>
+                    <p style="margin-bottom: 1rem;"><strong>Role Overview:</strong> Plan and execute performance marketing campaigns and SEO strategies for TechSolutions' clients across India.</p>
                     <p style="margin-bottom: 0.5rem;"><strong>Key Responsibilities:</strong></p>
                     <ul style="margin-bottom: 1rem; padding-left: 1.5rem;">
-                        <li>Manage high-budget Meta and Google Ad campaigns.</li>
-                        <li>A/B testing and landing page optimization.</li>
-                        <li>Analytical reporting and ROI calculation.</li>
+                        <li>Manage Google Ads and Meta Ads campaigns with a focus on qualified lead generation.</li>
+                        <li>Conduct keyword research and implement on-page and off-page SEO strategies.</li>
+                        <li>Track, analyse, and report on campaign performance and ROI.</li>
                     </ul>
-                    <p><strong>Requirements:</strong> Proven track record of scaling ad spend and deep analytical skills.</p>
-                `
-            },
-            'gmb': {
-                title: 'GMB & <span class="text-gradient">Local SEO Expert</span>',
-                content: `
-                    <p style="margin-bottom: 1rem;"><strong>Role Overview:</strong> Help local businesses dominate their search neighborhood across India.</p>
-                    <p style="margin-bottom: 0.5rem;"><strong>Key Responsibilities:</strong></p>
-                    <ul style="margin-bottom: 1rem; padding-left: 1.5rem;">
-                        <li>Optimize Google Business Profiles for maximum visibility.</li>
-                        <li>Manage local citations and review acquisition.</li>
-                        <li>Track local search ranking and traffic growth.</li>
-                    </ul>
-                    <p><strong>Requirements:</strong> In-depth knowledge of local search algorithms and GMB guidelines.</p>
+                    <p><strong>Requirements:</strong> Proven experience managing paid campaigns, solid understanding of SEO fundamentals, and strong analytical skills.</p>
                 `
             }
         };
@@ -272,9 +287,10 @@
             
             // Auto-select dropdown
             const select = document.querySelector('select[name="position"]');
-            if (roleKey === 'web') select.value = 'Senior Web Developer';
-            if (roleKey === 'marketing') select.value = 'Performance Marketing Specialist';
-            if (roleKey === 'gmb') select.value = 'GMB & Local SEO Expert';
+            if (roleKey === 'web') select.value = 'Full Stack Web Developer';
+            if (roleKey === 'crm') select.value = 'CRM Implementation Specialist';
+            if (roleKey === 'testing') select.value = 'Software Test Engineer';
+            if (roleKey === 'marketing') select.value = 'Digital Marketing & SEO Specialist';
         }
 
         document.querySelectorAll('.nav-links a').forEach(link => {
